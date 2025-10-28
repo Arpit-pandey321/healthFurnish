@@ -1,4 +1,6 @@
-# Logs
+# --------------------------------------------------
+#  🔧 LOG FILES
+# --------------------------------------------------
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,44 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# --------------------------------------------------
+#  📦 DEPENDENCIES & BUILD OUTPUT
+# --------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+.vercel/
+coverage/
 
-# Editor directories and files
+# --------------------------------------------------
+#  🔐 ENVIRONMENT FILES (keep secrets out of git)
+# --------------------------------------------------
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# --------------------------------------------------
+#  🧠 EDITOR & SYSTEM FILES
+# --------------------------------------------------
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+
+# --------------------------------------------------
+#  🧪 TEST & TEMP FILES
+# --------------------------------------------------
+*.tgz
+*.tmp
+.cache/
+temp/
