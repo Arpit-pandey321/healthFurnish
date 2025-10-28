@@ -1,0 +1,117 @@
+.service-intro {
+  background-image: url("../media/images//ai-generated-healthy-food-store-advertisment-background-with-copy-space-free-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+}
+.service-intro h1 {
+  font-family: serif;
+  font-weight: 550;
+  padding: 10px;
+  font-size: 60px;
+}
+
+.service {
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+.service:hover {
+  animation: floatEffect 2s ease-in-out infinite alternate;
+}
+
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.service img {
+  position: absolute;
+  top: 0;
+  margin-top: -90px;
+  right: 25%;
+}
+
+.service-content {
+  background: linear-gradient(to bottom, #ffd57e, #fff 50%);
+  border: 1px solid rgb(224, 223, 223);
+  padding: 100px 30px 40px 30px;
+  margin: 0px;
+}
+
+@media (max-width: 1200px) {
+  .service img {
+    position: absolute;
+    top: 0;
+    margin-top: -90px;
+    right: 10%;
+  }
+}
+
+@media (max-width: 770px) {
+  .service img {
+    position: absolute;
+    top: 5%;
+    margin-top: -90px;
+    right: 33%;
+  }
+}
+@media (max-width: 440px) {
+  .service img {
+    position: absolute;
+    top: 0%;
+    margin-top: -90px;
+    right: 20%;
+  }
+}
+
+@media (max-width: 320px) {
+  .service img {
+    position: absolute;
+    top: 0%;
+    margin-top: -90px;
+    right: 10%;
+  }
+}
+
+.imgs img {
+  height: 250px !important;
+  width: 250px !important;
+}
+/* From Uiverse.io by adamgiebl */
+.buttons {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 55px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: grey;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid grey;
+  border-radius: 40px;
+  box-shadow: inset 0 0 0 0 black;
+}
+
+.buttons:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 lightskyblue;
+  border: 2px solid lightskyblue;
+}
+
+.buttons:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,308 @@
+.about-intro {
+  background-image: url("../media/images//page-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+}
+.about-intro h1 {
+  font-family: serif;
+  font-weight: 550;
+  padding: 10px;
+  font-size: 60px;
+}
+
+.imgOne {
+  height: 370px;
+  width: 280px;
+  border-radius: 20px;
+}
+.imgTwo {
+  height: 280px;
+  width: 280px;
+  border-radius: 20px;
+}
+.who-content h1 {
+  font-family: serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.who-content p {
+  padding: 0px 50px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .who-content p {
+    padding: 0px 10px;
+  }
+  .imgOne {
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .imgTwo {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .who-content p {
+    padding: 0px 10px;
+  }
+  .imgOne {
+    height: 230px;
+    width: 180px;
+    border-radius: 20px;
+  }
+  .imgTwo {
+    height: 180px;
+    width: 180px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .who-content p {
+    padding: 0px 10px;
+  }
+  .imgOne {
+    height: 200px;
+    width: 180px;
+    border-radius: 20px;
+  }
+  .imgTwo {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+  }
+}
+
+/*! feature */
+
+.feature {
+  margin-top: 100px;
+  padding: 40px;
+}
+.feature h1 {
+  font-size: 50px;
+  font-family: serif;
+  font-weight: 600;
+}
+
+@media (max-width: 430px) {
+  .feature h1 {
+    font-size: 30px;
+    font-family: serif;
+    font-weight: 600;
+  }
+  .feature {
+    padding: 20px;
+  }
+}
+
+/* ! team */
+
+.imgs-wrapper {
+  overflow: hidden;
+}
+
+.imgs-wrapper img {
+  height: 350px;
+}
+
+.profile-name {
+  font-family: serif;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.team-head {
+  font-family: serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.profile-designation {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.profile-education {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+  .imgs-wrapper img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .imgs-wrapper img {
+    height: 300px;
+  }
+  .profile-name {
+    font-family: serif;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .profile-designation {
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+
+  .profile-education {
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imgs-wrapper img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 780px) {
+  .imgs-wrapper img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .imgs-wrapper img {
+    height: 100px;
+  }
+  .profile-name {
+    font-family: serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .profile-designation {
+    font-size: 16px;
+    font-family: serif;
+  }
+
+  .profile-education {
+    font-size: 15px;
+    font-family: serif;
+  }
+}
+
+/* ! testimonial */
+
+.client-one {
+  /* padding: 40px; */
+  margin: 50px 0px;
+}
+
+.client-one h3 {
+  font-family: serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.client-one img {
+  height: 330px;
+  width: 400px;
+}
+
+@media (max-width: 1200px) {
+  .client-one img {
+    height: 310px;
+    width: 310px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .client-one img {
+    height: 250px;
+    width: 220px;
+  }
+}
+
+@media (max-width: 430px) {
+  .client-one img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* !work */
+
+.tab {
+  height: 90%;
+  width: 90%;
+}
+
+.first-half {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  height: 360px;
+  z-index: -1;
+}
+.second-half {
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  height: 450px;
+  z-index: -1;
+}
+.food1 {
+  height: 200px;
+}
+.food-paras {
+  padding: 10px 50px;
+}
+
+.food-head {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: serif;
+}
+
+@media (max-width: 1000px) {
+  .food-para {
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .tab {
+  height: 90%;
+  width: 100%;
+  z-index: 1;
+}
+  .first-half {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    height: 150px;
+    z-index: -1;
+  }
+  .second-half {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    height: 200px;
+  }
+  .food-head {
+    font-size: 40px;
+  }
+}

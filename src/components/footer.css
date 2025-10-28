@@ -1,0 +1,161 @@
+.foot-container {
+  /* margin-top: 100px; */
+  width: 100%;
+  background-color: #0a4d3c;
+  position: relative;
+}
+.foot-leaf {
+  z-index: 0;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  animation: leafRotate 5s linear infinite;
+  pointer-events: none;
+}
+.foot-leafs {
+  z-index: 0;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  animation: leafRotate 5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes leafRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  0% {
+    transform: rotate(0deg);
+  }
+}
+
+.foot-input {
+  z-index: 1;
+  padding: 15px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: white;
+}
+
+.foot-input:focus {
+  border: 2px solid orange;
+  box-shadow: 0px 0px 10px orange;
+  outline: 2px solid orange;
+}
+
+.cssbuttons-io-button {
+  background: orange;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em orange;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em orange;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: orange;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.foot-links {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+.foot-links:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.heart {
+  animation: beat 1s linear infinite;
+}
+
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 1200px) {
+  .foot-input {
+    z-index: 1;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: white;
+  }
+}
+
+@media (max-width: 800px) {
+  .foot-input {
+    z-index: 1;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: white;
+  }
+}
+
+@media (max-width: 450px) {
+  .foot-input {
+    z-index: 1;
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: white;
+  }
+}

@@ -1,0 +1,23 @@
+.questions-para p {
+  border: 1px solid rgb(166, 164, 164);
+  padding: 25px 20px;
+  font-size: 25px;
+  font-family: serif;
+  margin-bottom: 0px;
+  background: #f8f6f4;
+  /* border-radius: 20px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.questions-para {
+  /* margin-top: 50px; */
+  margin-bottom: 20px;
+}
+.lottie {
+  height: 500px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0px;
+}
+

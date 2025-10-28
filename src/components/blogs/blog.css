@@ -1,0 +1,27 @@
+.blog-intro {
+  background-image: url("https://nutrifurnish.com/assets/images/page-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+}
+.blog-intro h1{
+    font-family: serif;
+    font-weight: 550;
+    padding:10px;
+    font-size: 60px;
+}
+
+.connect-logo span{
+  font-size: 18px;
+  color:#0a4d3c ;
+  border: 1px solid grey;
+  border-radius: 50%;
+  padding: 10px 15px 10px 15px;
+}
+
+.connect-logo span:hover{
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
