@@ -4,10 +4,11 @@ import "./home.css";
 import Aos from "aos";
 const Program = () => {
   useEffect(() => {
-    Aos.init({
-      duration: "1000",
-    });
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   return (
     <div className="container  pt-3 pb-5">
       <div className="row mt-5 diet">
@@ -46,7 +47,10 @@ const Program = () => {
             height={"180px"}
           />
         </div>
-        <div className="col-lg-4 col-12 mt-5 text-center p-0 d-flex align-items-center gap-2 justify-content-center flex-column rejuvenate" data-aos="fade-left">
+        <div
+          className="col-lg-4 col-12 mt-5 text-center p-0 d-flex align-items-center gap-2 justify-content-center flex-column rejuvenate"
+          data-aos="fade-left"
+        >
           <h1>Rejuvenate </h1>
           <p className="text-muted">
             Purify, Detox, and Rejuvenate Your Body - specifically the liver,
@@ -57,7 +61,10 @@ const Program = () => {
         </div>
       </div>
       <div className="row mt-5">
-        <div className="col-lg-4 col-12 mt-5 text-center p-0 d-flex align-items-center gap-2 justify-content-center flex-column diet" data-aos="fade-right">
+        <div
+          className="col-lg-4 col-12 mt-5 text-center p-0 d-flex align-items-center gap-2 justify-content-center flex-column diet"
+          data-aos="fade-right"
+        >
           <h1>Body Assessment</h1>
           <p className="text-muted">
             Complete Body and Nutritional Assessment and Evaluation. To provide
@@ -67,7 +74,10 @@ const Program = () => {
             status.
           </p>
         </div>
-        <div className="col-lg-8 col-12 mt-5 text-start p-0 d-flex align-items-start" data-aos="fade-left">
+        <div
+          className="col-lg-8 col-12 mt-5 text-start p-0 d-flex align-items-start"
+          data-aos="fade-left"
+        >
           <DotLottieReact
             src="https://lottie.host/353fa5bb-8179-4998-a465-f807d4e8f6f6/s2c9JyHFKs.lottie"
             loop

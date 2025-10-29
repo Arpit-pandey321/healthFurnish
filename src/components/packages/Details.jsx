@@ -137,7 +137,9 @@ const Details = () => {
   const [formData, setFormData] = useState({ name: "", email: "", mobile: "" });
 
   useEffect(() => {
-    Aos.init({ duration: "1000" });
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
 
   const handleShow = (title, price) => {
@@ -256,9 +258,7 @@ const Details = () => {
             <h3 className="mb-3 mt-5">30 days challenge</h3>
             <div className="package-img">
               <img src={fit} alt="" />
-              <span
-                onClick={() => handleShow("30 Days Challenge", "3500 Rs")}
-              >
+              <span onClick={() => handleShow("30 Days Challenge", "3500 Rs")}>
                 3500 rs
               </span>
             </div>
@@ -305,9 +305,11 @@ const Details = () => {
             <div className="package-img">
               <img src={slim} alt="" />
               <span
-              onClick={() => handleShow("90 Days Challenge", "8500 Rs")}
-              style={{cursor:"pointer"}}
-              >8500 rs</span>
+                onClick={() => handleShow("90 Days Challenge", "8500 Rs")}
+                style={{ cursor: "pointer" }}
+              >
+                8500 rs
+              </span>
             </div>
             <div className="package-description">
               <ul

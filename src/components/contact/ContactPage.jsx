@@ -59,10 +59,11 @@ const ContactPage = () => {
   };
 
   useEffect(() => {
-    Aos.init({
-      duration: "1000",
-    });
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   return (
     <>
       <div className=" container-fluid contact-intro d-flex align-items-center justify-content-center">

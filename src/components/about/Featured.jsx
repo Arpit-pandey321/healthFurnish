@@ -9,14 +9,21 @@ import world from "../media/images/bwdisrupt-businessworld@2x.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const Featured = () => {
-    useEffect(()=>{
-        Aos.init()
-    },[])
+  useEffect(() => {
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
+  }, []);
+
   return (
-    <div className="container feature text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-        <h1 >We're featured in</h1>
+    <div
+      className="container feature text-center"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+    >
+      <h1>We're featured in</h1>
       <Marquee speed={80} className="mt-5" gradient>
         <div className="ms-3 me-3">
           <img src={abp} alt="" />

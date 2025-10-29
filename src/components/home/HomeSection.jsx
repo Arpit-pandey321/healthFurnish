@@ -2,13 +2,16 @@ import React, { useEffect } from "react";
 import "./home.css";
 import leaf from "../media/images/shape-1.png";
 import Aos from "aos";
-import model from "../media/images/simple-miranda-kerr-female-model-full-body-034d9ihwlyiu4nn0.jpg"
-import nutri from "../media/images/1000_F_139360694_rIjQLWtrrD7l7qc0LLLd4OI5cUG9nqlV-removebg-preview.png"
+import model from "../media/images/simple-miranda-kerr-female-model-full-body-034d9ihwlyiu4nn0.jpg";
+import nutri from "../media/images/1000_F_139360694_rIjQLWtrrD7l7qc0LLLd4OI5cUG9nqlV-removebg-preview.png";
 
 const HomeSection = () => {
   useEffect(() => {
-    Aos.init();
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   return (
     <div className="container ">
       <div className="row mt-5">
@@ -20,20 +23,21 @@ const HomeSection = () => {
             src={model}
             alt=""
             className="instructor"
-            style={{borderEndEndRadius:"100px"}}
+            style={{ borderEndEndRadius: "100px" }}
           />
           <div className="rotate-img">
-            <img
-              src={nutri}
-              alt=""
-            />
+            <img src={nutri} alt="" />
           </div>
         </div>
         <div
           className="col-12 col-md-7 position-relative mt-5  section-data bg-body-tertiary mw-100"
           data-aos="fade-left"
         >
-          <div className="section-img" data-aos="fade-left" data-aos-delay="800">
+          <div
+            className="section-img"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
             <img src={leaf} alt="" />
           </div>
           <h6 className="hero-headTop p-2 mb-3" data-aos="fade-up">

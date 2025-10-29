@@ -5,8 +5,11 @@ import Aos from "aos";
 
 const Surround = () => {
   useEffect(() => {
-    Aos.init();
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   return (
     <div className="container">
       <div className="row mt-5 mb-5">
@@ -14,8 +17,7 @@ const Surround = () => {
           className="col-md-6 col-12 d-flex align-items-start justify-content-center flex-column"
           data-aos="fade-up"
         >
-          <h1 className="surround-head"
-          >
+          <h1 className="surround-head">
             Surround <br />
             yourself with <br /> the right people
           </h1>

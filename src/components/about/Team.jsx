@@ -5,11 +5,13 @@ import "aos/dist/aos.css";
 
 
 const Team = () => {
-    useEffect(()=>{
-        Aos.init({
-            duration:"1000"
-        })
-    },[])
+    useEffect(() => {
+  
+  setTimeout(() => {
+    Aos.refresh();
+  }, 300);
+}, []);
+
   return (
     <div className="container">
       <div className="row mt-5 d-flex align-items-center justify-content-center">

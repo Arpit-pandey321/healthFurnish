@@ -3,12 +3,15 @@ import "./about.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import group from "../media/images/group.png"
+import group from "../media/images/group.png";
 
 const AboutIntro = () => {
   useEffect(() => {
-    Aos.init();
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   return (
     <div>
       <div className=" container-fluid about-intro d-flex align-items-center justify-content-center">

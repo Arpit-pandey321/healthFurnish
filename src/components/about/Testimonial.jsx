@@ -9,10 +9,12 @@ import "aos/dist/aos.css";
 
 const Testimonial = () => {
   useEffect(() => {
-    Aos.init({
-      duration: "1000",
-    });
-  }, []);
+  
+  setTimeout(() => {
+    Aos.refresh();
+  }, 300);
+}, []);
+
   return (
     <div className="container">
       <div className="row d-flex align-items-center justify-content-around mt-5">

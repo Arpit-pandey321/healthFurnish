@@ -3,7 +3,6 @@ import "./welcome.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const Welcome = () => {
   const [isVisible, setIsVisible] = useState(false);
 

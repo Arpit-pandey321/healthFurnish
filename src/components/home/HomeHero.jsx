@@ -7,16 +7,25 @@ import { useNavigate } from "react-router-dom";
 
 const HomeHero = () => {
   let navigate = useNavigate();
- 
 
   return (
-    <Carousel controls={false} indicators={false} pause={false} slide={true} interval={3000}>
+    <Carousel
+      controls={false}
+      indicators={false}
+      pause={false}
+      slide={true}
+      interval={3000}
+    >
       <Carousel.Item>
         <div className="bannerTwo">
           <div className="container">
             <div className="row">
               <div className="col-12 hero-col">
-                <h6 className="hero-headTop p-2 mb-3" data-aos="fade-up" data-aos-duration="1500">
+                <h6
+                  className="hero-headTop p-2 mb-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   FITNESS & NUTRITION
                 </h6>
                 <h1

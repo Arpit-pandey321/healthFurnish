@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import Aos from "aos";
-import community_img from "../media/images/fittr_community_judgement_free_c2ff664eb3.webp"
-
+import community_img from "../media/images/fittr_community_judgement_free_c2ff664eb3.webp";
 
 const Result = () => {
   useEffect(() => {
-    Aos.init();
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   return (
-    <div className="container position-relative" >
+    <div className="container position-relative">
       <h1 className="results" data-aos="fade-right">
         A judgement-free <br />
         space for everyone

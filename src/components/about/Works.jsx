@@ -2,18 +2,17 @@ import React, { useEffect } from "react";
 import "./about.css";
 import bowlOne from "../media/images/bowlOne.avif";
 import bowlTwo from "../media/images/bowlTwo.avif";
-import bowlThree from "../media/images/bowlThree.avif";
+import bowlThree from "../media/images/bowelThree.avif";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const Works = () => {
   useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
+  setTimeout(() => {
+    Aos.refresh();
+  }, 300);
+}, []);
+
   return (
     <div className="container-fluid work-container">
       <div

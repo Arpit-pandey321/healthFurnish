@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import leaf from "../media/images/leaf.png";
 import "aos/dist/aos.css";
 
-
 const Provide = () => {
   useEffect(() => {
-    Aos.init({
-      duration:"1000"
-    });
+    setTimeout(() => {
+      Aos.refresh();
+    }, 300);
   }, []);
+
   let navigate = useNavigate();
   return (
     <div className="container-fluid bg-body-tertiary contents">
