@@ -1,6 +1,6 @@
 import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import "../App.css"; // Import fade styles
+import "../App.css";
 
 const Preloader = ({ fadeOut }) => {
   return (

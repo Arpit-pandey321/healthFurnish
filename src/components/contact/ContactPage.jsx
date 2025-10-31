@@ -30,7 +30,6 @@ const ContactPage = () => {
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT;
     const userID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY_PACKAGE;
 
-    // Map formData to template variables
     const templateParams = {
       user_name: formData.name,
       user_email: formData.email,

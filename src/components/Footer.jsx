@@ -29,7 +29,7 @@ const Footer = () => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const templateParams = {
-      user_email: email, // must match your EmailJS template variable {{user_email}}
+      user_email: email,
     };
 
     emailjs
@@ -55,9 +55,10 @@ const Footer = () => {
 
       <div className="container" style={{ zIndex: "1" }}>
         <div className="row d-flex align-items-center justify-content-center">
-          {/* ===== Subscribe Section ===== */}
           <div className="col-12 col-md-4 mt-5">
-            <h3 style={{ fontFamily: "cursive", color: "orange" }}>Subscribe us</h3>
+            <h3 style={{ fontFamily: "cursive", color: "orange" }}>
+              Subscribe us
+            </h3>
             <div className="mt-4 d-flex align-items-start justify-content-center flex-column gap-3">
               <form onSubmit={handleSubmit}>
                 <input
@@ -95,9 +96,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* ===== Help Links ===== */}
           <div className="col-12 col-md-4 d-flex align-items-start justify-content-center flex-column mt-5">
-            <h3 className="mb-4" style={{ fontFamily: "cursive", color: "orange" }}>
+            <h3
+              className="mb-4"
+              style={{ fontFamily: "cursive", color: "orange" }}
+            >
               Help links
             </h3>
             <ul className="d-flex align-items-start justify-content-center flex-column p-0 gap-3 list-unstyled">
@@ -129,9 +132,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* ===== Hours + Location ===== */}
           <div className="col-12 col-md-4 mt-5">
-            <h3 style={{ color: "orange", fontFamily: "cursive" }}>Opening Hours</h3>
+            <h3 style={{ color: "orange", fontFamily: "cursive" }}>
+              Opening Hours
+            </h3>
             <ul className="mt-4 d-flex align-items-start justify-content-center flex-column gap-3 p-0">
               <li className="foot-links">Mon-Fri: 9 AM – 6 PM</li>
               <li className="foot-links">Saturday: 9 AM – 4 PM</li>
@@ -150,7 +154,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* ===== Footer Bottom ===== */}
       <div className="row text-center d-flex align-items-center justify-content-center mt-5">
         <p
           className="text-light m-0 p-3 fs-5"
@@ -161,7 +164,10 @@ const Footer = () => {
             HealthFurnish
           </span>{" "}
           Made by{" "}
-          <span className="heart" style={{ color: "orange", display: "inline-block" }}>
+          <span
+            className="heart"
+            style={{ color: "orange", display: "inline-block" }}
+          >
             🧡
           </span>{" "}
           OS Infotech
